@@ -1,6 +1,7 @@
+import "./globals.css";
+
 export const metadata = {
-  title: "Controle Financeiro",
-  description: "Gerencie suas finanças com gráficos e PDF",
+  title: "Controle Financeiro Pessoal",
 };
 
 export default function RootLayout({
