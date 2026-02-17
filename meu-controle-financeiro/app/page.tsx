@@ -1,5 +1,5 @@
-import FinanceApp from "@/components/FinanceApp";
+import FinanceDashboard from "@/components/FinanceDashboard";
 
 export default function Home() {
-  return <FinanceApp />;
+  return <FinanceDashboard />;
 }
