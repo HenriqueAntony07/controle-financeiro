@@ -36,6 +36,14 @@ export function useFinance() {
     );
   }, [salario, gastosFixos, gastosVariaveis]);
 
+  const limparTudo = () => {
+  setSalario(0);
+  setGastosFixos([]);
+  setGastosVariaveis([]);
+  localStorage.removeItem("finance-data");
+};
+
+
   const totalFixos = gastosFixos.reduce((a, b) => a + b.valor, 0);
   const totalVariaveis = gastosVariaveis.reduce((a, b) => a + b.valor, 0);
   const totalGastos = totalFixos + totalVariaveis;
@@ -52,5 +60,6 @@ export function useFinance() {
     totalVariaveis,
     totalGastos,
     saldo,
+    limparTudo,
   };
 }

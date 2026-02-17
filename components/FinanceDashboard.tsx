@@ -28,7 +28,7 @@ export default function FinanceDashboard() {
             saldo: finance.saldo,
           })
         }
-        onClear={() => localStorage.clear()}
+        onClear={finance.limparTudo}
         onExport={() => exportarBackup(finance)}
         onImport={() => {}}
       />
