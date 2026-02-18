@@ -1,5 +1,5 @@
 import "./globals.css";
-<link rel="icon" type="image/png" href="/favicon.png" />
+
 export const metadata = {
   title: "Controle Financeiro Pessoal",
 };
